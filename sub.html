@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>main</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CF/css/reset.css">
+    <link rel="stylesheet" href="/CF/css/style.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/CF/js/script.js"></script>
+    <script src="/CF/js/sub.js"></script>
+    <script src="/CF/js/main.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header border_box">
+        <div class="containerbox_p">
+          <h1><a href="/CF/index.html"><img src="/CF/img/logo.png" alt="logo_춘천문화재단_예술소통공간_곳"></a></h1>
+        </div>
+      </header>
+
+      <section>
+        <div class="sub">
+          <div class="sub_main_img"></div>
+          <div class="sub_menu">
+            <ul class="clearfix">
+              <li class="border_box"><a href="#sub1" class="active">작가소개</a></li>
+              <li class="border_box"><a href="#sub2">작품</a></li>
+            </ul>
+          </div>
+          <div class="sub_contents active" id="sub1">
+            <div class="profile">
+              <div class="containerbox_p clearfix">
+                <div class="imgbox">
+                  <img src="" alt="사진1">
+                  <script>
+                    document.querySelector('.imgbox > img').src = '/CF/img/profile/profile_img' + object.artist_index + '.png';
+                  </script>
+                </div>
+                <div class="textbox">
+                  <div class="box1">
+                    <div class="name">
+                      <script>
+                      document.write(object.name);
+                      </script>
+                    </div>
+                    <div class="name_e">
+                      <script>
+                      document.write(object.name_e);
+                      </script>
+                    </div>
+                  </div>
+                  <div class="box2 clearfix">
+                    <div class="birth">
+                      <script>
+                      document.write(object.birth);
+                      </script>
+                    </div>
+                    <div class="down"><a href="#a">작가평론 다운로드</a></div>
+                  </div>
+                  <div class="box3">
+                    <script>
+                    document.write(object.introduce);
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="containerbox_p">
+              <div class="history_wrap">
+                <div class="history clearfix">
+                  <div class="title">작가노트</div>
+                  <div class="desc">
+                    <script>
+                    document.write(object.note);
+                    </script>
+
+                  </div>
+                </div>
+                <div class="history clearfix">
+                  <div class="title">학력 정보</div>
+                  <div class="desc">
+                    <script>
+                    document.write(object.edu);
+                    </script>
+                  </div>
+                </div>
+                <div class="history clearfix">
+                  <div class="title">전시</div>
+                  <div class="desc">
+                    <script>
+                    document.write(object.award);
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub_contents" id="sub2">
+            <div class="containerbox">
+              <ul class="clearfix">
+<!-- 작품 -->
+<script>
+  for(var i=0;i<object.artwork_length;i++){
+    document.write(`<li>
+      <div class="artworkbox">
+        <div class="box_wrap">
+          <div class="imgbox">
+            <img src="/CF/img/artworks/artist${object.artist_index}/${i}.jpg" alt="" onload="myinfo(this);" onclick="popupOpen(this)" style="cursor:pointer">
+          </div>
+          <div class="textbox">
+            <div class="name">
+            ${object.name}
+            </div>
+            <div class="name_e">
+            ${object.name_e}
+            </div>
+            <div class="title">
+            ${object.title['title'+i]}
+            </div>
+            <div class="year">
+            ${object.year['year'+i]}
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>`);
+  }
+</script>
+<!-- 작품 -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer border_box">
+        <div class="containerbox_p">
+          <div class="footerbox_wrap clearfix">
+            <div class="leftbox border_box">
+              <p>정책·사업문의: 033-259-5800</p>
+              <p>대관문의: 춘천문화예술회관 공연장·전시장 / 공지천·한마당 야외공연장: 033-259-5847</p>
+              <p>축제극장 몸짓: 033-259-5849 / 생활문화센터 아르숲: 033-259-5424</p>
+            </div>
+            <div class="rightbox border_box">
+              <img src="/CF/img/logo_f.png" alt="footer_logo_춘천문화재단_예술소통공간_곳">
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="popup">
+        <div class="pop_header clearfix">
+          <img src="/CF/img/close_btn.png" alt="" style="cursor:pointer">
+        </div>
+        <div class="pop_section">
+          <div class="sec1">
+            <div class="containerbox_p">
+              <img src="" onload="myinfo(this);" alt="" style="cursor : pointer" onclick="windowOpen(this)">
+              <div class="detail_icon" onclick="windowOpen2(this)">
+                <img src="/CF/img/detail_icon.png" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div class="sec2">
+            <div class="containerbox_p">
+              <div class="title">
+
+              </div>
+              <div class="desc_box clearfix">
+                <div class="left">
+                  <div class="name">
+                    작가명
+                  </div>
+                  <div class="year">
+                    제작연도
+                  </div>
+                  <div class="genre">
+                    장르
+                  </div>
+                  <div class="material">
+                    재료
+                  </div>
+                  <div class="size">
+                    규격
+                  </div>
+                </div>
+                <div class="right">
+                  <div class="name">
+
+                  </div>
+                  <div class="year">
+
+                  </div>
+                  <div class="genre">
+
+                  </div>
+                  <div class="material">
+
+                  </div>
+                  <div class="size">
+
+                  </div>
+                </div>
+              </div>
+              <div class="detail">
+                <div class="history clearfix">
+                  <div class="title">작가노트</div>
+                  <div class="desc">
+                    <p>
+흑과 백의 색은 어두움과 빛, 보이는 것과 보이지 않는 것 사이의 간극을 표현한다. 빛과 그림자가 맞닿은 물체의 구조적인 속성을 파악하여 물체가 갖는 물성과 빛의 반사에 대한 표현을 빛에서의 형상과 어둠에서의 형상으로 그려낸다.
+캔버스는 그림이 그려지는 공간으로, 평면적인 공간에 시각적인 착각을 통하여 3차원을 보여 줄 수 있는 공간이다. 여기에 두 가지의 공간을 더 사용한다. 전시장의 벽과 가변설치로 존재하게 된 테이블이다.
+                    </p>
+                    <p>
+작품에서 보이는 관계는 첫 번째는 공간이며 두 번째는 사물이다. 벽의 공간 A, 캔버스 공간 B(공간 속의 사물), 테이블 공간 C로 본다면 A는 그림이 걸리고 B는 캔버스(틀) 사물이지만, C는 화병을 받치고 있는 공간이다. C는 A의 공간과 만나 서로 관계 속에서 공간을 공유하고 환유한다. 서로 다른 공간들은 그것들만의 코드를 가지고 있으며 서로 다른 곳에 존재 하지만 관계와 상호작용을 통해 어울림 또는 공간의 공존으로 변형되어 하나를 이룬다. 평면작업과 가변설치로 물체의 성질과 평면공간의 삼투적인 변화를 나타내고자 하였다.
+                    </p>
+                    <p>
+                      작품 안에서의 체크들은 공간과 사물의 모습을 나타내는데 이것은 그리드로서 캔버스의 가상공간을 나타내어 시각적 질서와 일관성을 보여준다. 단순하고 반복적인 패턴을 의도적으로 깨트리고 물체를 형상화하여 코드를 이루고 있는 패턴을 비코드화하여 가시적인 형태로 나타낸다. 정해진 틀을 깨트리고 부수며 그리고 변형하는 것은 새로움을 발견을 할 수 있는 한가지의 방법으로 대상에 관계없이 본연의 모습을 혹은 본질에 대해 의문을 던져 의미(깨달음)를 찾아보고자한다.
+                    </p>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

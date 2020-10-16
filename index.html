@@ -9,143 +9,58 @@
     <link rel="stylesheet" href="/CF/css/style.css">
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="/CF/js/script.js"></script>
-    <script>
-    var object = {
-      title : 'to see, to be seen',
-      name : '홍길동',
-      name_e : 'Hong Gil Dong',
-      year : 2017,
-      genre : '회화',
-      material : '캔버스',
-      size : '60.6 X 72.7',
-      detail : 'none'
-    }; 
-    var objKeys = Object.keys(object);
-    </script>
+    <script src="/CF/js/main.js"></script>
+
   </head>
   <body>
     <div class="wrap">
       <header class="header border_box">
         <div class="containerbox_p">
-          <h1><img src="/CF/img/logo.png" alt="logo_춘천문화재단_예술소통공간_곳"></h1>
+          <h1><a href="/CF/index.html"><img src="/CF/img/logo.png" alt="logo_춘천문화재단_예술소통공간_곳"></a></h1>
         </div>
       </header>
+
       <section>
-        <div class="sub">
-          <div class="sub_main_img"></div>
-          <div class="sub_menu">
-            <ul class="clearfix">
-              <li class="border_box"><a href="#sub1" class="active">작가소개</a></li>
-              <li class="border_box"><a href="#sub2">작품</a></li>
-            </ul>
-          </div>
-          <div class="sub_contents active" id="sub1">
-            <div class="profile">
-              <div class="containerbox_p clearfix">
-                <div class="imgbox">
-                  <img src="/CF/img/profile_img1.png" alt="사진1">
-                </div>
-                <div class="textbox">
-                  <div class="box1">
-                    <div class="name">
-                      홍길동
-                    </div>
-                    <div class="name_e">
-                      Hong Gil Dong
-                    </div>
-                  </div>
-                  <div class="box2 clearfix">
-                    <div class="birth">
-                      1986-06-30
-                    </div>
-                    <div class="down"><a href="#a">작가평론 다운로드</a></div>
-                  </div>
-                  <div class="box3">
-                    평면 작품과 가변설치 등의 작품 활동을 하고 있는 박준석입니다. 이외에도 전시, 프로젝트, 프로그램 등의 기획을 겸하고 있습니다. 작품으로나마 즐거운 만남이 되길 희망합니다.
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="containerbox_p">
-              <div class="history_wrap">
-                <div class="history clearfix">
-                  <div class="title">작가노트</div>
-                  <div class="desc">
-                    <p>
-                      흑과 백의 색은 어두움과 빛, 보이는 것과 보이지 않는 것 사이의 간극을 표현한다. 빛과 그림자가 맞닿은 물체의 구조적인 속성을 파악하여 물체가 갖는 물성과 빛의 반사에 대한 표현을 빛에서의 형상과 어둠에서의 형상으로 그려낸다.
-캔버스는 그림이 그려지는 공간으로, 평면적인 공간에 시각적인 착각을 통하여 3차원을 보여 줄 수 있는 공간이다. 여기에 두 가지의 공간을 더 사용한다. 전시장의 벽과 가변설치로 존재하게 된 테이블이다.
-                    </p>
-                    <p>
-작품에서 보이는 관계는 첫 번째는 공간이며 두 번째는 사물이다. 벽의 공간 A, 캔버스 공간 B(공간 속의 사물), 테이블 공간 C로 본다면 A는 그림이 걸리고 B는 캔버스(틀) 사물이지만, C는 화병을 받치고 있는 공간이다. C는 A의 공간과 만나 서로 관계 속에서 공간을 공유하고 환유한다. 서로 다른 공간들은 그것들만의 코드를 가지고 있으며 서로 다른 곳에 존재 하지만 관계와 상호작용을 통해 어울림 또는 공간의 공존으로 변형되어 하나를 이룬다. 평면작업과 가변설치로 물체의 성질과 평면공간의 삼투적인 변화를 나타내고자 하였다.
-                    </p>
-                    <p class="last">
-                      작품 안에서의 체크들은 공간과 사물의 모습을 나타내는데 이것은 그리드로서 캔버스의 가상공간을 나타내어 시각적 질서와 일관성을 보여준다. 단순하고 반복적인 패턴을 의도적으로 깨트리고 물체를 형상화하여 코드를 이루고 있는 패턴을 비코드화하여 가시적인 형태로 나타낸다. 정해진 틀을 깨트리고 부수며 그리고 변형하는 것은 새로움을 발견을 할 수 있는 한가지의 방법으로 대상에 관계없이 본연의 모습을 혹은 본질에 대해 의문을 던져 의미(깨달음)를 찾아보고자한다.
-                    </p>
-                  </div>
-                </div>
-                <div class="history clearfix">
-                  <div class="title">학력 정보</div>
-                  <div class="desc">
-                    <p class="last">
-                      2015.02 홍익대학교 회화 석사졸업
-                    </p>
-                  </div>
-                </div>
-                <div class="history clearfix">
-                  <div class="title">전시</div>
-                  <div class="desc">
-                    <p class="last">
-<span>2019.03	新정물, 시대정물/에코락갤러리</span>
-<span>2019.02	살롱 드 배다리/사진공간배다리</span>
-<span>2018.10	하이유스페스티벌/송도트라이보울</span>
-<span>2018.10	아트마이닝서울/DDP</span>
-<span>2018.10	하이유스페스티벌/송도트라이보울</span>
-<span>2018.07	지브라아트페어/대안공간눈</span>
-<span>2018.06	Translated structure 개인전/대안공간 눈</span>
-<span>2018.05	C-Festival/코엑스A Hall</span>
-<span>2018.01	오산시립미술관 新소장품전/오산시립미술관</span>
-<span>2016.08	Shadow in the morning개인전/대담미술관</span>
-<span>2015.04	Same face different idea개인전/동탄아트스페이스</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="sub_contents" id="sub2">
-            <div class="containerbox_p">
-              <ul class="clearfix">
-
-                <li>
-                  <div class="artworkbox">
-                    <div class="box_wrap">
-                      <div class="imgbox">
-                        <img src="/CF/img/2.png" alt="" onload="myinfo(this);" onclick="popupOpen(this)" style="cursor:pointer">
+        <div class="main">
+          <div class="artist_wrap">
+            <div class="artist_top clearfix">
+<!-- artist -->
+              <script>
+                for(var j=1;j<7;j++){
+                document.write(`
+                  <div class="clearfix">
+                    <div class="artist_box clearfix">
+                      <div class="imgbox_s">
+                        <div class="imgbox">
+                          <img src="/CF/img/main_img.png" alt="">
+                        </div>
                       </div>
-                      <div class="textbox">
-                        <div class="name">
-                          홍길동
-                        </div>
-                        <div class="name_e">
-                          Hong Gil Dong
-                        </div>
-                        <div class="title">
-                          to see, to be seen
-                        </div>
-                        <div class="year">
-                          2017
+                      <div class="textbox_s">
+                        <div class="textbox">
+                          <div class="name">
+                            ${artistName['artist'+j].name}
+                          </div>
+                          <div class="name_e">
+                            ${artistName['artist'+j].name_e}
+                            </div>
+                          <div class="more">
+                            <form action="/CF/sub.html">
+                              <input type="submit" id="artist${j}" name="artist" value="${j}" style="display :none;">
+                              <label for="artist${j}"><img src="/CF/img/more.png" alt=""></label>
+                            </form>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </li>
-
-              </ul>
+                  `)
+                }
+              </script>
+<!-- artist end -->
             </div>
           </div>
-
         </div>
+
       </section>
       <footer class="footer border_box">
         <div class="containerbox_p">
@@ -161,96 +76,7 @@
           </div>
         </div>
       </footer>
-      <div class="popup">
-        <div class="pop_header clearfix">
-          <img src="/CF/img/close_btn.png" alt="" style="cursor:pointer">
-        </div>
-        <div class="pop_section">
-          <div class="sec1">
-            <div class="containerbox_p">
-              <img src="/CF/img/1.png" onload="myinfo(this);" alt="">
-            </div>
 
-          </div>
-          <div class="sec2">
-            <div class="containerbox_p">
-              <div class="title">
-                <script>
-                document.write(object.title);
-                </script>
-              </div>
-              <div class="desc_box clearfix">
-                <div class="left">
-                  <div class="name">
-                    작가명
-                  </div>
-                  <div class="year">
-                    제작연도
-                  </div>
-                  <div class="genre">
-                    장르
-                  </div>
-                  <div class="material">
-                    재료
-                  </div>
-                  <div class="size">
-                    규격
-                  </div>
-                </div>
-                <div class="right">
-                  <div class="name">
-                    <script>
-                    document.write(object.title);
-                    </script>
-                  </div>
-                  <div class="year">
-                    <script>
-                    document.write(object.year);
-                    </script>
-                  </div>
-                  <div class="genre">
-                    <script>
-                    document.write(object.genre);
-                    </script>
-                  </div>
-                  <div class="material">
-                    <script>
-                    document.write(object.material);
-                    </script>
-                  </div>
-                  <div class="size">
-                    <script>
-                    document.write(object.size);
-                    </script>
-                  </div>
-                </div>
-              </div>
-              <div class="detail">
-                <div class="history clearfix">
-                  <div class="title">작가노트</div>
-                  <div class="desc">
-                    <p>
-흑과 백의 색은 어두움과 빛, 보이는 것과 보이지 않는 것 사이의 간극을 표현한다. 빛과 그림자가 맞닿은 물체의 구조적인 속성을 파악하여 물체가 갖는 물성과 빛의 반사에 대한 표현을 빛에서의 형상과 어둠에서의 형상으로 그려낸다.
-캔버스는 그림이 그려지는 공간으로, 평면적인 공간에 시각적인 착각을 통하여 3차원을 보여 줄 수 있는 공간이다. 여기에 두 가지의 공간을 더 사용한다. 전시장의 벽과 가변설치로 존재하게 된 테이블이다.
-                    </p>
-                    <p>
-작품에서 보이는 관계는 첫 번째는 공간이며 두 번째는 사물이다. 벽의 공간 A, 캔버스 공간 B(공간 속의 사물), 테이블 공간 C로 본다면 A는 그림이 걸리고 B는 캔버스(틀) 사물이지만, C는 화병을 받치고 있는 공간이다. C는 A의 공간과 만나 서로 관계 속에서 공간을 공유하고 환유한다. 서로 다른 공간들은 그것들만의 코드를 가지고 있으며 서로 다른 곳에 존재 하지만 관계와 상호작용을 통해 어울림 또는 공간의 공존으로 변형되어 하나를 이룬다. 평면작업과 가변설치로 물체의 성질과 평면공간의 삼투적인 변화를 나타내고자 하였다.
-                    </p>
-                    <p>
-                      작품 안에서의 체크들은 공간과 사물의 모습을 나타내는데 이것은 그리드로서 캔버스의 가상공간을 나타내어 시각적 질서와 일관성을 보여준다. 단순하고 반복적인 패턴을 의도적으로 깨트리고 물체를 형상화하여 코드를 이루고 있는 패턴을 비코드화하여 가시적인 형태로 나타낸다. 정해진 틀을 깨트리고 부수며 그리고 변형하는 것은 새로움을 발견을 할 수 있는 한가지의 방법으로 대상에 관계없이 본연의 모습을 혹은 본질에 대해 의문을 던져 의미(깨달음)를 찾아보고자한다.
-                    </p>
-
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-
-          </div>
-
-        </div>
-      </div>
     </div>
 
   </body>
