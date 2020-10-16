@@ -38,6 +38,7 @@
     padding-left : 15px;
     padding-right : 15px;
     box-sizing: border-box;
+    position : relative;
   }
 }
 
@@ -79,9 +80,11 @@ footer{
   text-align: center;
   padding-top : 3rem;
 }
+header h1 a{display : block;width: 387px;margin: 0 auto;}
 .header > img{
   display : block;
 }
+
 
 /* footer */
 .footer{
@@ -162,11 +165,10 @@ footer{
   float: left;
 }
 #sub1 .profile .imgbox{
-  width : 27.8rem;
+  width : 30%;
   height : 33.0rem;
-  margin-right : 6.5rem
 }
-#sub1 .profile .textbox{width : 836px;}
+#sub1 .profile .textbox{width : 70%}
   #sub1 .profile .textbox .box1{padding-top : 3.7rem}
     #sub1 .profile .textbox .box1 > div{font-size: 3.0rem;font-weight: 500;}
     #sub1 .profile .textbox .box1 > div:last-child{padding-top : 1.2rem;}
@@ -206,7 +208,7 @@ footer{
   box-shadow: 0px 0px 2.0rem #aaa;
 }
 #sub2 > div > ul > li .artworkbox .imgbox{background-color: #fff;height : 30.5rem;width : 100%;position:relative;overflow:hidden;}
-  #sub2 > div > ul > li .artworkbox .imgbox img{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);height:100%;width:auto;}
+  #sub2 > div > ul > li .artworkbox .imgbox img{position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);width:auto;}
 
 #sub2 > div > ul > li .artworkbox .textbox{background-color: #fff;height : 18rem;width : 100%;padding:0 2.0rem;}
   #sub2 > div > ul > li .artworkbox .textbox .name{color:#666;font-weight: 400;padding-top:3.0rem}
@@ -247,7 +249,7 @@ footer{
     position : relative;
   }
   .pop_section .sec1 div.containerbox_p img{
-    position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);height:100%;width:auto;
+    position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);max-height:100%;width:auto;
   }
 .pop_section .sec2{padding-top : 5.3rem;background-color: #fff;}
   .pop_section .sec2 .title{color : #333;font-size: 3.6rem;font-weight: 400;padding-bottom : 3.0rem;}
@@ -268,12 +270,111 @@ footer{
   .pop_section .sec2 .detail .history .desc{float : right;width : 102rem;border-top:1px solid #e0e0e0;margin-top:4px;padding-top:1.0rem;}
   .pop_section .sec2 .detail .history .desc p{padding-bottom:4.2rem;line-height: 2.8rem;font-weight: 400;color : #666;font-size: 1.6rem;}
 
+  .pop_section .sec1 .detail_icon{width:66px;height:66px;background-color: #806f5a;position:absolute;bottom:0;right:-96px;cursor:pointer}
+  .pop_section .sec1 .detail_icon img{display:block;position:absolute;top:0;left:0;transform:translate(-50%,-50%)}
+
+  @media all and (max-width : 1410px){
+    .pop_section .sec1 .detail_icon{width:66px;height:66px;background-color: #806f5a;position:absolute;bottom:20px;right:20px;cursor:pointer}
+  }
+  /* main */
+  .main{
+    padding : 13.0rem 0;
+    min-height: 100vh;
+    background : url("/CF/img/bg.png") no-repeat center;
+    background-size: cover;
+  }
+  .main .artist_wrap{
+    height : 100%;
+    margin : 0 auto;
+    min-height: 1px;
+    width : 1500px;
+    /* background-color: coral; */
+  }
+  .main .artist_wrap > div{
+    width : 100%;
+    height : 50%;
+  }
+
+  .main .artist_wrap > div.artist_bottom{
+    padding-top : 40px
+  }
+  .main .artist_wrap > div > div{
+    width : 33.3333%;
+    height : 310px;
+    /* background-color: green; */
+    float : left;
+    margin-bottom : 60px;
+  }
+
+  .main .artist_wrap > div > div > div {height : 100%;float : right;}
+  .main .artist_wrap > div > div:nth-child(7) > div{float : left}
+  .main .artist_wrap > div > div:nth-child(5) > div{float : left}
+  .main .artist_wrap > div > div:nth-child(6) > div{float : left}
+  .main .artist_wrap > div > div > div > div {float : left;}
+  .main .artist_wrap > div > div > div .imgbox_s{height : 100%;width : 320px;background-color: brown;position : relative;box-shadow: 4px 4px 8px #aaa;}
+  .main .artist_wrap > div > div > div .textbox_s{height : 220px;width : 86px;background-color: brown;position : relative;box-shadow: 4px 4px 8px #aaa;}
+  .main .artist_wrap > div > div > div .imgbox_s .imgbox{z-index: 100;position : absolute;left:0;top:0;height : 100%;width : 100%;background-color: #fff;padding:15px 30px;overflow : hidden;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox{z-index: 100;position : absolute;left:0;top:0;height : 100%;width : 100%;background-color: #fff;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .name{font-size: 2.5rem;padding-top:calc(220px/2 - 25px/2);font-weight: 500;padding-bottom:10px}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .name_e{font-size: 1.6rem;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .name_e span{display : block;font-weight: 400;padding-bottom : 5px;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .more{width : 86px;height : 86px;position : absolute;bottom:-86px;font-size: 86px;text-align: center;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .more label{display:block;width : 100%;height : 100%;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .more label:hover{cursor : pointer;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .more label img{padding-top:calc(86px/2 - 32px/2);}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .more a{display:block;width : 100%;height : 100%;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .more a img{padding-top:calc(86px/2 - 32px/2);}
+
+@media all and (min-width : 1400px) and (max-width : 1570px){
+  .main .artist_wrap{width : 94%;}
+}
+
+@media all and (min-width : 1200px) and (max-width : 1400px){
+  .main .artist_wrap{width : 100%;}
+  .main .artist_wrap > div > div{width : 50%;}
+  .main .artist_wrap > div > div > div {height : 100%;float : none;width : 406px;margin : 0 auto;}
+  .main .artist_wrap > div > div:nth-child(7) > div{float : none;}
+  .main .artist_wrap > div > div:nth-child(5) > div{float : none;}
+  .main .artist_wrap > div > div:nth-child(6) > div{float : none;}
+
+  .containerbox_p {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+
+
+}
 
 @media all and (min-width:1024px) and (max-width:1199px) {
   #sub1 .profile .textbox{width : 63%;float : right}
   #sub1 .history_wrap .history .desc{width : 85%;}
 
+  #sub2 > div > ul > li{width : 50%;}
+  #sub2 > div > ul > li .artworkbox{padding : 0 1.5rem;}
+
+  .main .artist_wrap{width : 100%;}
+  .main .artist_wrap > div > div{width : 50%;}
+  .main .artist_wrap > div > div > div {height : 100%;float : none;width : 406px;margin : 0 auto;}
+  .main .artist_wrap > div > div:nth-child(7) > div{float : none;}
+  .main .artist_wrap > div > div:nth-child(5) > div{float : none;}
+  .main .artist_wrap > div > div:nth-child(6) > div{float : none;}
+
+  .pop_section .sec2 .detail .history .desc {
+    width: 85%;
 }
+
+  .pop_section .sec1 div.containerbox_p{
+    min-height: 60.0rem;
+  }
+
+
+
+
+}
+
+
 /* 테블릿 가로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {
   #sub1 .profile > div > div{float : none;}
@@ -281,16 +382,108 @@ footer{
   #sub1 .profile .textbox {width : 100%;text-align: center}
   #sub1 .history_wrap .history .title{float: none;text-align: center;padding-bottom: 2.0rem;padding-top: 2.0rem;}
   #sub1 .history_wrap .history .desc{float : none;width : 100%;text-align: center;}
+  #sub2 > div > ul > li{width : 50%;}
+  #sub2 > div > ul > li .artworkbox{padding : 0 1.5rem;}
+
+  .main .artist_wrap{width : 100%;}
+  .main .artist_wrap > div > div{width : 100%;}
+  .main .artist_wrap > div > div > div {height : 100%;float : none;width : 406px;margin : 0 auto;}
+  .main .artist_wrap > div > div:nth-child(7) > div{float : none;}
+  .main .artist_wrap > div > div:nth-child(5) > div{float : none;}
+  .main .artist_wrap > div > div:nth-child(6) > div{float : none;}
+
+  .pop_section .sec2 .detail .history .title {
+    float: none;
+    text-align: center;
+    padding-bottom: 2.0rem;
+    padding-top: 2.0rem;
+  }
+  .pop_section .sec2 .detail .history .desc {
+      float: none;
+      width: 100%;
+      text-align: center;
+  }
+  .pop_section .sec1 div.containerbox_p{
+    min-height: 40.0rem;
+  }
+  #sub1 .profile .imgbox {margin-right: 0;margin : 0 auto;width:100%;position : relative}
+  #sub1 .profile .imgbox img {position : absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
 
 }
+
+@media all and (max-width:1023px) {
+
+  .footer .leftbox{
+    float : none;
+  }
+  .footer .leftbox p{
+    text-align: center;
+    font-size: 1.6rem;
+    color : #fff;
+    opacity: 0.4;
+    padding-bottom: 1.4rem;
+  }
+  .footer .rightbox{
+
+    float : none;
+    padding-left : 2rem;
+    padding-top : 2rem;
+    text-align: right;
+  }
+  .footer .rightbox img{text-align: center;display : block;margin : 0 auto;}
+}
+
+@media all and (min-width:930px) and (max-width:1023px) {
+  .main .artist_wrap{width : 100%;}
+  .main .artist_wrap > div > div{width : 50%;}
+  .main .artist_wrap > div > div > div {height : 100%;float : none;width : 406px;margin : 0 auto;}
+  .main .artist_wrap > div > div:nth-child(7) > div{float : none;}
+  .main .artist_wrap > div > div:nth-child(5) > div{float : none;}
+  .main .artist_wrap > div > div:nth-child(6) > div{float : none;}
+}
+
 
 /* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/
 @media all and (min-width:480px) and (max-width:767px) {
   #sub1 .profile > div > div{float : none;}
-  #sub1 .profile .imgbox {margin-right: 0;margin : 0 auto;}
+  #sub1 .profile .imgbox {margin-right: 0;margin : 0 auto;width:100%;position : relative}
+  #sub1 .profile .imgbox img {position : absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
   #sub1 .profile .textbox {width : 100%;text-align: center}
   #sub1 .history_wrap .history .title{float: none;text-align: center;padding-bottom: 2.0rem;padding-top: 2.0rem;}
   #sub1 .history_wrap .history .desc{float : none;width : 100%;text-align: center;}
+  #sub2 > div > ul > li{width : 100%;}
+  #sub2 > div > ul > li .artworkbox{padding : 0 1.5rem;}
+
+  .main .artist_wrap{width : 100%;}
+  .main .artist_wrap > div > div{width : 100%;}
+  .main .artist_wrap > div > div > div {height : 100%;float : none;width : 406px;margin : 0 auto;}
+  .main .artist_wrap > div > div:nth-child(7) > div{float : none;}
+  .main .artist_wrap > div > div:nth-child(5) > div{float : none;}
+  .main .artist_wrap > div > div:nth-child(6) > div{float : none;}
+
+  .main {
+    padding: 5.0rem 0;
+  }
+
+  .pop_section .sec2 .detail .history .title {
+    float: none;
+    text-align: center;
+    padding-bottom: 2.0rem;
+    padding-top: 2.0rem;
+  }
+  .pop_section .sec2 .detail .history .desc {
+      float: none;
+      width: 100%;
+      text-align: center;
+  }
+  .pop_section .sec1 div.containerbox_p{
+    min-height: 30.0rem;
+  }
+  .pop_section .sec2 .desc_box > div.left{width : 50%;text-align: center;}
+  .pop_section .sec2 .desc_box > div.right{width : 50%;text-align: center;}
+  .pop_section .sec2 .desc_box > div.right > div{margin-left:0;}
+  .pop_section .sec2 .title{text-align: center;}
+
 
 
 }
@@ -298,13 +491,63 @@ footer{
 /* 모바일 세로 (해상도 ~ 479px)*/
 @media all and (max-width:479px) {
   #sub1 .profile > div > div{float : none;}
-  #sub1 .profile .imgbox {margin-right: 0;margin : 0 auto;}
+  #sub1 .profile .imgbox {margin-right: 0;margin : 0 auto;width:100%;position : relative}
+  #sub1 .profile .imgbox img {position : absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
   #sub1 .profile .textbox {width : 100%;text-align: center}
   #sub1 .history_wrap .history .title{float: none;text-align: center;padding-bottom: 2.0rem;padding-top: 2.0rem;}
   #sub1 .history_wrap .history .desc{float : none;width : 100%;text-align: center;}
+  #sub2 > div > ul > li{width : 100%;}
+  #sub2 > div > ul > li .artworkbox{padding : 0 1.5rem;}
 
+  .main .artist_wrap{width : 100%;}
+  .main .artist_wrap > div > div{width : 100%;padding:0 1.5rem;height : 450px;margin-bottom:1.5rem;}
+  .main .artist_wrap > div > div > div {height : 100%;float : none;width : 100%;margin : 0 auto;}
+  .main .artist_wrap > div > div:nth-child(7) > div{float : none;}
+  .main .artist_wrap > div > div:nth-child(5) > div{float : none;}
+  .main .artist_wrap > div > div:nth-child(6) > div{float : none;}
+
+  .main .artist_wrap > div > div > div .imgbox_s{width : 100%;height : 70%;position : relative;overflow: hidden;}
+  .main .artist_wrap > div > div > div .imgbox_s .imgbox img{display : block;position :absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
+  .main .artist_wrap > div > div > div .textbox_s{width : 100%;height : 30%;}
+
+  .main .artist_wrap > div > div > div .textbox_s > div > div{text-align: center;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .name{font-size: 2.5rem;padding-top:0;font-weight: 500;padding-bottom:10px}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .name_e{font-size: 1.6rem;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .name_e span{display : inline;font-weight: 400;padding-bottom : 5px;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .more{width: 86px;height: 85px;position: static;bottom: 0px;font-size: 86px;text-align: center;margin:0 auto;padding:30px;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .more a{display: block;width: 100%;height: 100%;position : relative;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .more a img{padding:0;position : absolute;left:50%;top:50%;transform:translate(-50%,-50%);}
+  .main{padding:3.0rem 0;}
+
+  .pop_section .sec2 .detail .history .title {
+    float: none;
+    text-align: center;
+    padding-bottom: 2.0rem;
+    padding-top: 2.0rem;
+  }
+  .pop_section .sec2 .detail .history .desc {
+      float: none;
+      width: 100%;
+      text-align: center;
+  }
+  .pop_section .sec1 div.containerbox_p{
+    min-height: 20.0rem;
+  }
+  .pop_section .sec2 .title{text-align: center;}
+  .pop_section .sec2{padding-top:3.0rem;}
+  .pop_section .sec2 .desc_box > div.left{width : 50%;text-align: center;}
+  .pop_section .sec2 .desc_box > div.right{width : 50%;text-align: center;}
+  .pop_section .sec2 .desc_box > div.right > div{margin-left:0;}
+  .pop_section .sec1{padding:2.0rem 0}
+
+  header h1 img{width : 300px;}
+  .main .artist_wrap > div > div > div .textbox_s .textbox .more label img{padding:0;}
+
+  .footer .rightbox img{width : 230px;}
 
 }
+
+
 
 
 
